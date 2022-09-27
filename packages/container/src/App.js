@@ -1,8 +1,12 @@
 import React from "react";
-import {MarketingReactComponent} from "marketing/MarketingApp";
+import MarketingApp from "./components/MarketingApp";
 
 export default () => {
   return(
-    <MarketingReactComponent />
+    <div>
+      <h1>Hi there</h1>
+      <hr/>
+      <MarketingApp />
+    </div>
   )
 }
