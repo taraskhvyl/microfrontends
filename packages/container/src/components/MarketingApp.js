@@ -8,11 +8,8 @@ export default () => {
 
   useEffect(() => {
     const {onParentNavigate} = mount(ref.current, {
-      onNavigate: ({pathName: nextPathName}) => {
+      onNavigate: ({pathname: nextPathName}) => {
         const {pathname} = history.location;
-
-        // TODO: fix undefined for nextPathName
-        console.log(nextPathName)
 
         if(pathname !== nextPathName) {
           history.push(nextPathName);
